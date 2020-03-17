@@ -137,9 +137,6 @@ width: 2px;
 }
 
 
-
-
-
 .chatItem {
     max-width: 280px;
     word-wrap: break-word;
@@ -236,7 +233,7 @@ width: 2px;
 }
 
 #spectButton {
-    left: 68% !important;
+    left: 92% !important;
     top: 1% !important;
 	transform: scale(1.25) !important;
 }
@@ -313,7 +310,7 @@ pointer-events:all !important;
 .clan_dyna {
     position:relative;
     color:transparent!important;
-    background-image:url(https://i.imgur.com/ohgG2KA.gif);
+    background-image:url(https://i.imgur.com/ohgG2KA.gif) !important;
     background-size:115%;
     background-repeat:no-repeat;
     background-position:-.1vw -2.7vh;
