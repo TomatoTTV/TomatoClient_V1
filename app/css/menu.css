@@ -314,5 +314,5 @@ pointer-events:all !important;
     background-size:115%;
     background-repeat:no-repeat;
     background-position:-.1vw -2.7vh;
-    filter:drop-shadow(0 0 .05vw #000)!important
+    filter:drop-shadow(0 0 .05vw rgb(68, 68, 68))!important
 }
