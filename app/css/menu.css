@@ -18,11 +18,11 @@
 }
 
 .menuItem:hover {
-    background: #340abf
+    background: #05b39b
 }
 
 .menuItem:active {
-    background: #041f79
+    background: #06520d
 }
 #serverSearch,#settingSearch {
     float: right;
@@ -53,7 +53,7 @@
 #speedDisplay {
     position: absolute;
     font-size: 16px;
-    color: #02e6da;
+    color: #2d3333;
     pointer-events: all !important;
     top: 8.64px;
     left: none;
@@ -236,7 +236,7 @@ width: 2px;
 }
 
 #spectButton {
-    left: 71% !important;
+    left: 68% !important;
     top: 1% !important;
 	transform: scale(1.25) !important;
 }
