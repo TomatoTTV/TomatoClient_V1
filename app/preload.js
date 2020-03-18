@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		})
 	}
 
-	document.body.innerHTML += '<link rel="stylesheet" type="text/css" href="https://tomatottv.github.io/code/menu.css">';
+	document.body.innerHTML += '<link rel="stylesheet" type="text/css" href="https://tomatottv.github.io/code/menu2.css">';
     var menubuttons = document.getElementById('subLogoButtons');
 dragElement(document.getElementById("topLeftHolder"));
 dragElement(document.getElementById("chatHolder"));
