@@ -37,37 +37,16 @@ class Utilities {
 					}
 				}
 			},
-			d3d9Mode: {
-				name: "Window Capture",
-				pre: "<div class='setHed'>Streaming</div>",
-				val: false,
-				html: _ => {
-					return `<label class='switch'><input type='checkbox' onclick='window.utilities.setSetting("d3d9Mode", this.checked)' ${this.settings.d3d9Mode.val ? "checked" : ""}><span class='slider'></span></label>`;
-				},
-				set: (_, init) => {
-					if (!init) {
-						alert("App will now restart for setting to take effect.");
-						remote.app.relaunch();
-						remote.app.quit();
-					}
-				}
-			},
 			frameLimit: {
 				name: "Hard FPS Limit",
 				pre: "<div class='setHed customUtility'>More Performance</div>",
 				val: 0,
 				min: 0,
-				max: 1000,
+				max: 7000,
 				step: 1,
 				html: () => generateSetting("slider", "frameLimit", this)
 			},
-			customFontsCSSFix: {
-				name: "Fix CSS for Custom Fonts",
-				pre: "<div class='setHed customUtility'>Patch</div>",
-				val: true,
-				html: () => generateSetting("checkbox", "customFontsCSSFix", this)
-			},
-			/* preventAFK: {
+			 preventAFK: {
 				name: "Prevent AFK Kick",
 				pre: "<div class='setHed customUtility'>General Tweak</div>",
 				val: false,
@@ -80,22 +59,6 @@ class Utilities {
 						if (!init) this.settings.preventAFK.resources.intervalId = setInterval(() => window.dispatchEvent(new KeyboardEvent("keydown")), 60000)
 					}
 					else if (!init) clearInterval(this.settings.preventAFK.resources.intervalId)
-				}
-			}, */
-			chatSpecialChars: {
-				name: "Chat Special Characters",
-				pre: "<div class='setHed customUtility'>General Tweak</div>",
-				val: false,
-				html: () => generateSetting("checkbox", "chatSpecialChars", this),
-				set: (value, init) => {
-					if (value && init) chatInput.addEventListener("keydown", event => {
-						if (!event.isComposing && (event.key == "Enter" || event.key == "e" && event.ctrlKey) && document.activeElement == chatInput) {
-							chatInput.value = "&" + Array.from(chatInput.value).map(char => {
-								let codePoint = char.codePointAt()
-								return (31 < codePoint && codePoint < 128) ? char : `&#x${codePoint.toString(16)};`
-							}).join("")
-						}
-					})
 				}
 			},
 			rememberSearch: {
