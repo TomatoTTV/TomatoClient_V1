@@ -345,8 +345,8 @@ const initViewerWindow = (url) => {
 
 const initSplashWindow = () => {
 	splashWindow = new BrowserWindow({
-		width: 826,
-		height: 629,
+		width: 800,
+		height: 800,
 		transparent: true,
 		frame: false,
 		// skipTaskbar: true,
