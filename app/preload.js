@@ -192,12 +192,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	document.body.innerHTML += '<link rel="stylesheet" type="text/css" href="https://tomatottv.github.io/code/menu2.css">';
     var menubuttons = document.getElementById('subLogoButtons');
-dragElement(document.getElementById("topLeftHolder"));
-dragElement(document.getElementById("chatHolder"));
-dragElement(document.getElementById("bottomLeftHolder"));
-dragElement(document.getElementById("bottomRight"));
-dragElement(document.getElementById("speedDisplay"));
-dragElement(document.getElementById("menuClassContainer"));
-menubuttons.innerHTML +='<div class="button small buttonP" id="morebttn" onmouseenter="playTick()" onclick="window.hidemoreoptions2()">Next</div>'
+	dragElement(document.getElementById("topLeftHolder"));
+	dragElement(document.getElementById("chatHolder"));
+	dragElement(document.getElementById("bottomLeftHolder"));
+	dragElement(document.getElementById("bottomRight"));
+	dragElement(document.getElementById("speedDisplay"));
+	dragElement(document.getElementById("menuClassContainer"));
+	menubuttons.innerHTML +='<div class="button small buttonP" id="morebttn" onmouseenter="playTick()" onclick="window.hidemoreoptions2()">Next</div>'
 
 }, false);
