@@ -198,6 +198,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	dragElement(document.getElementById("bottomRight"));
 	dragElement(document.getElementById("speedDisplay"));
 	dragElement(document.getElementById("menuClassContainer"));
-	menubuttons.innerHTML +='<div class="button small buttonP" id="morebttn" onmouseenter="playTick()" onclick="window.hidemoreoptions2()">Next</div>'
+	menubuttons.innerHTML +='<div class="button small buttonP" id="morebttn" onmouseenter="playTick()" onclick="window.hidemoreoptions2()">Next</div>';
 
 }, false);
