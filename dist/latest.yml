@@ -1,8 +1,8 @@
 version: 1.8.3
 files:
-  - url: DynaClient-Setup-1.8.3.exe
-    sha512: GTaUxiV1hLsppiOU6pCtaRb1FHLHj/ROHUUZL25ixGeTvSoFEqRjZE1SQkxwFTEIP//l0GJiHAQEeHt4ARLLXQ==
-    size: 56569318
-path: DynaClient-Setup-1.8.3.exe
-sha512: GTaUxiV1hLsppiOU6pCtaRb1FHLHj/ROHUUZL25ixGeTvSoFEqRjZE1SQkxwFTEIP//l0GJiHAQEeHt4ARLLXQ==
-releaseDate: '2020-03-18T01:30:45.580Z'
+  - url: TomatoClient-Setup-1.8.3.exe
+    sha512: Tg3obzWIG/NpbXQqcReL8MboaL0Uf8NsmpeW5BD7zMBD94rwm2tkLGxdaGdVbWioFYAaJb2fjnmVpOVbIh216w==
+    size: 56885905
+path: TomatoClient-Setup-1.8.3.exe
+sha512: Tg3obzWIG/NpbXQqcReL8MboaL0Uf8NsmpeW5BD7zMBD94rwm2tkLGxdaGdVbWioFYAaJb2fjnmVpOVbIh216w==
+releaseDate: '2020-03-18T04:18:54.731Z'
