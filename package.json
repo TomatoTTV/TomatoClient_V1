@@ -1,6 +1,6 @@
 {
   "name": "DynaClient",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "description": "This is a client only for Dyna Members only and i mean DYNA ONLY.",
   "author": "Tomato",
   "main": "app/main.js",
