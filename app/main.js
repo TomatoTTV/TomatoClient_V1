@@ -31,8 +31,6 @@ consts.DEBUG = consts.DEBUG || config.get("utilities_debugMode", false)
 app.userAgentFallback = app.userAgentFallback.replace(/(?<=io).custom(?=.krunker.desktop)|-custom\.\d+/g, "")
 
 const initSwitches = () => {
-	// Usefull info
-	// https://forum.manjaro.org/t/howto-google-chrome-tweaks-for-76-0-3809-100-or-newer-20190817/39946
 	if (config.get('utilities_unlimitedFrames', true)) {
 		if (consts.isAMDCPU) app.commandLine.appendSwitch('enable-zero-copy');
 		app.commandLine.appendSwitch('disable-frame-rate-limit');
@@ -128,36 +126,6 @@ const initGameWindow = () => {
 	});
 	gameWindow.removeMenu()
 	gameWindow.rpc = rpc;
-
-	let swapFolder = consts.joinPath(app.getPath('documents'), '/KrunkerResourceSwapper');
-	try { fs.mkdir(swapFolder, { recursive: true }, e => { }); } catch (e) { };
-	let swap = { filter: { urls: [] }, files: {} };
-	const allFilesSync = (dir, fileList = []) => {
-		fs.readdirSync(dir).forEach(file => {
-			const filePath = consts.joinPath(dir, file);
-			let useAssets = RegExp(`${swapFolder.replace(/\\/g, "\\\\")}\\\\(models|textures)\\b`).test(dir);
-			if (fs.statSync(filePath).isDirectory()) {
-				if (!(/\\(docs)$/.test(filePath)))
-					allFilesSync(filePath);
-			} else {
-				if (!(/\.(html|js)/g.test(file))) {
-					let krunk = `*://${useAssets ? "assets." : ""}krunker.io${filePath.replace(swapFolder, '').replace(/\\/g, '/')}*`
-					swap.filter.urls.push(krunk);
-					swap.files[krunk.replace(/\*/g, '')] = url.format({
-						pathname: filePath,
-						protocol: 'file:',
-						slashes: true
-					});
-				}
-			}
-		});
-	};
-	if (!config.get("utilities_disableResourceSwapper", false)) allFilesSync(swapFolder);
-	if (swap.filter.urls.length) {
-		gameWindow.webContents.session.webRequest.onBeforeRequest(swap.filter, (details, callback) => {
-			callback({ cancel: false, redirectURL: swap.files[details.url.replace(/https|http|(\?.*)|(#.*)|(?<=:\/\/)beta./gi, '')] || details.url });
-		});
-	}
 
 	// Resource Dumper
 	if (config.get("utilities_dumpResources", false)) {
@@ -531,7 +499,7 @@ const initShortcuts = () => {
 			press: () => gameWindow.toggleDevTools()
 		},
 		relaunch: {
-			key: "Alt+Shift+R",
+			key: "Alt+Ctrl+Shift+R",
 			press: () => {
 				app.relaunch()
 				app.quit()
