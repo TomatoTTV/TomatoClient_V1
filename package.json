@@ -1,7 +1,7 @@
 {
-  "name": "DynaClient",
+  "name": "TomatoClient",
   "version": "1.8.3",
-  "description": "This is a client only for Dyna Members only and i mean DYNA ONLY.",
+  "description": "This is a Client that i have been working on for a while now",
   "author": "Tomato",
   "main": "app/main.js",
   "repository": "https://github.com/TomatoTTV/dyna_client_V2",
