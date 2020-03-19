@@ -1,8 +1,8 @@
 version: 1.8.3
 files:
   - url: TomatoClient-Setup-1.8.3.exe
-    sha512: Tg3obzWIG/NpbXQqcReL8MboaL0Uf8NsmpeW5BD7zMBD94rwm2tkLGxdaGdVbWioFYAaJb2fjnmVpOVbIh216w==
-    size: 56885905
+    sha512: UD5UPmt2Mg31uw6DVpSo4k3VARl6reIFjX2C03+IKIWHW1yfzis8fW0OHilgUvDnX259++/9XLfcbQWq42tjaQ==
+    size: 56885983
 path: TomatoClient-Setup-1.8.3.exe
-sha512: Tg3obzWIG/NpbXQqcReL8MboaL0Uf8NsmpeW5BD7zMBD94rwm2tkLGxdaGdVbWioFYAaJb2fjnmVpOVbIh216w==
-releaseDate: '2020-03-18T04:18:54.731Z'
+sha512: UD5UPmt2Mg31uw6DVpSo4k3VARl6reIFjX2C03+IKIWHW1yfzis8fW0OHilgUvDnX259++/9XLfcbQWq42tjaQ==
+releaseDate: '2020-03-19T19:04:13.434Z'
