@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		})
 	}
 
-	document.body.innerHTML += '<link rel="stylesheet" type="text/css" href="https://tomatottv.github.io/code/menu1.css">';
+	 document.body.innerHTML += '<link rel="stylesheet" type="text/css" href="https://tomatottv.github.io/code/menu1.css">';
     var menubuttons = document.getElementById('subLogoButtons');
 	dragElement(document.getElementById("topLeftHolder"));
 	dragElement(document.getElementById("chatHolder"));
@@ -199,5 +199,5 @@ document.addEventListener("DOMContentLoaded", () => {
 	dragElement(document.getElementById("speedDisplay"));
 	dragElement(document.getElementById("menuClassContainer"));
 	menubuttons.innerHTML +='<div class="button small buttonP" id="morebttn" onmouseenter="playTick()" onclick="window.hidemoreoptions2()">Next</div>';
-
+		
 }, false);

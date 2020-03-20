@@ -56,7 +56,7 @@ class Utilities {
 				},
 				set: (value, init)=> {
 					if (value) {
-						if (!init) this.settings.preventAFK.resources.intervalId = setInterval(() => window.dispatchEvent(new KeyboardEvent("keydown")), 60000)
+						if (!init) this.settings.preventAFK.resources.intervalId = setInterval(() => window.dispatchEvent(new KeyboardEvent("keydown")), 80000)
 					}
 					else if (!init) clearInterval(this.settings.preventAFK.resources.intervalId)
 				}

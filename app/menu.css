@@ -4,7 +4,7 @@
         color: gray;
 }
 
-.clan_jbp{
+.clan_dyna{
     position:relative;
     color:yellow;
     filter:drop-shadow(0 0 .05vw rgb(68, 68, 68))!important
@@ -28,7 +28,7 @@
 }
 
 .menuItem:active {
-    background: #06520d
+    background: #d60b99
 }
 #serverSearch,#settingSearch {
     float: right;
@@ -127,7 +127,7 @@ width: 2px;
 #menuClassContainer {
     position: absolute;
     z-index: 0;
-    height: 15%;
+    height: 40px;
     width: 9%;
     display: flex;
     flex-direction: column;
@@ -156,7 +156,11 @@ width: 2px;
     background-color: rgba(31, 8, 8, 0);
 }
 
-
+#matchvoteholder .matchvote {
+    left: 80% !important;
+    width: 100px !important;
+    padding: 15%;
+}
 
 
 #chatInput {
@@ -196,7 +200,8 @@ width: 2px;
     bottom: 13%;
     left: 50%;
     transform: translate(-50%,0);
-    pointer-events:all; 
+    pointer-events:all;
+    height: 80px;
 }
 
 
