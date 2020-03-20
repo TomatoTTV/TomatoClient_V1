@@ -42,7 +42,7 @@ class Utilities {
 				pre: "<div class='setHed customUtility'>More Performance</div>",
 				val: 0,
 				min: 0,
-				max: 9000,
+				max: 10000,
 				step: 1,
 				html: () => generateSetting("slider", "frameLimit", this)
 			},
