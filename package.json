@@ -1,6 +1,6 @@
 {
   "name": "TomatoClient",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "description": "This is a Client that i have been working on for a while now",
   "author": "Tomato",
   "main": "app/main.js",
