@@ -4,7 +4,7 @@
   "description": "This is a Client that i have been working on for a while now",
   "author": "Tomato",
   "main": "app/main.js",
-  "repository": "https://github.com/TomatoTTV/dyna_client_V2",
+  "repository": "https://github.com/TomatoTTV/Client_V2",
   "license": "MIT",
   "dependencies": {
     "discord-rpc": "^3.1.0",
