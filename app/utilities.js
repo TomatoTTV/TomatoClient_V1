@@ -42,7 +42,7 @@ class Utilities {
 				pre: "<div class='setHed customUtility'>More Performance</div>",
 				val: 0,
 				min: 0,
-				max: 7000,
+				max: 9000,
 				step: 1,
 				html: () => generateSetting("slider", "frameLimit", this)
 			},
@@ -85,62 +85,7 @@ class Utilities {
 					}
 				}
 			},
-			scopeOffsetX: {
-				name: "Scope X Offset",
-				pre: "<div class='setHed customUtility'>Interface Tweak</div>",
-				val: "0%",
-				html: () => generateSetting("text", "scopeOffsetX", this, "Scope X Offset CSS Value"),
-				set: value => aimRecticle.style.transform = `translate(${value}, ${this.settings.scopeOffsetY.val})`
-			},
-			scopeOffsetY: {
-				name: "Scope Y Offset",
-				val: "0%",
-				html: () => generateSetting("text", "scopeOffsetY", this, "Scope Y Offset CSS Value"),
-				set: value => aimRecticle.style.transform = `translate(${this.settings.scopeOffsetX.val}, ${value})`
-			},
-			scopeOpacity: {
-				name: "Scope Opacity",
-				val: 1,
-				min: 0,
-				max: 1,
-				step: 0.01,
-				html: () => generateSetting("slider", "scopeOpacity", this),
-				set: value => recticleImg.style.opacity = value
-			},
-			gameOverlayOffsetX: {
-				name: "Game Overlay X Offset",
-				val: "0%",
-				html: () => generateSetting("text", "gameOverlayOffsetX", this, "Game Overlay X Offset CSS Value"),
-				set: value => overlay.style.transform = `translate(${value}, ${this.settings.gameOverlayOffsetY.val})`
-			},
-			gameOverlayOffsetY: {
-				name: "Game Overlay Y Offset",
-				val: "0%",
-				html: () => generateSetting("text", "gameOverlayOffsetY", this, "Game Overlay Y Offset CSS Value"),
-				set: value => overlay.style.transform = `translate(${this.settings.gameOverlayOffsetX.val}, ${value})`
-			},
-			gameOverlayOpacity: {
-				name: "Game Overlay Opacity",
-				val: 1,
-				min: 0,
-				max: 1,
-				step: 0.01,
-				html: () => generateSetting("slider", "gameOverlayOpacity", this),
-				set: value => overlay.style.opacity = value
-			},
-			damageOverlayOffsetX: {
-				name: "Damage Overlay X Offset",
-				val: "0%",
-				html: () => generateSetting("text", "damageOverlayOffsetX", this, "Damage Overlay X Offset CSS Value"),
-				set: value => bloodDisplay.style.transform = `translate(${value}, ${this.settings.damageOverlayOffsetY.val})`
-			},
-			damageOverlayOffsetY: {
-				name: "Damage Overlay Y Offset",
-				val: "0%",
-				html: () => generateSetting("text", "damageOverlayOffsetY", this, "Damage Overlay Y Offset CSS Value"),
-				set: value => bloodDisplay.style.transform = `translate(${this.settings.damageOverlayOffsetY.val}, ${value})`
-			},
-			hidePopupScore: {
+				hidePopupScore: {
 				name: "Hide Popup Score",
 				val: false,
 				html: () => generateSetting("checkbox", "hidePopupScore", this),
@@ -149,33 +94,7 @@ class Utilities {
 					else if (!init) this.consts.css.hidePopupScore.remove()
 				}
 			},
-			bonusScoreOpacity: {
-				name: "Bonus Score Opacity",
-				val: 1,
-				min: 0,
-				max: 1,
-				step: 0.01,
-				html: () => generateSetting("slider", "bonusScoreOpacity", this),
-				set: value => chalDisplay.style.opacity = value
-			},
-			overlayOpacity: {
-				name: "Crosshair, Nametag, etc. Opacity",
-				val: 1,
-				min: 0,
-				max: 1,
-				step: 0.01,
-				html: () => generateSetting("slider", "overlayOpacity", this),
-				set: value => window["game-overlay"].style.opacity = value
-			},
-			reloadMessageOpacity: {
-				name: "Reload Message Opacity",
-				val: 1,
-				min: 0,
-				max: 1,
-				step: 0.01,
-				html: () => generateSetting("slider", "reloadMessageOpacity", this),
-				set: value => reloadMsg.style.opacity = value
-			},
+
 			healthDisplayType: {
 				name: "Health Display Type",
 				val: "both",
